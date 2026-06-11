@@ -1,26 +1,33 @@
-const username ='Alice';
-let age = 25;
-console.log(username);
-console.log(age);
- function sayHello() {
-    console.log("hello,user!");
- }
-sayHello();
-const hobbies =["coding","gym","music"];
-for (let i = 0; i <hobbies.length; i++ ) {
-    console.log(hobbies[i]);
-}
-console.log("start");
-
-setTimeout(() =>{
-    console.log("This runs after 2 seconds");
-},  2000);
-console.log("End"); 
-let price = 6;
-
-if (price > 5){ 
-  console.log("Expensive");
-} else {
-  console.log("Cheap");}
+const ulElements = document.querySelectorAll("ul");
+ulElements.forEach(ulElement => {
+  const firstChild =ulElement.firstElementChild;
+  firstChild.style.backgroundColor = "purple";
+})
+const element =document.getElementById("desserts");
+const lastChild = element.lastElementChild;
+lastChild.style.backgroundColor ="blue"
 
 
+ulElements.forEach(ulElement =>{
+    const lastChild =ulElement.lastElementChild;
+    lastChild.style.backgroundColor ="yellow"
+})
+const element2=document.getElementById("blueberries");
+const nextSibling2 =element.nextElementSibling;
+nextSibling2.style.backgroundColor ="yellow"
+
+
+const element3 =document.getElmentById("gelato");
+const prevSibling =element3.previousElementSibling;
+prevSibling.style.backgroundColor ="yellow";
+
+
+
+const element4 =document.getElementById("gelato");
+const parent =element4.parentElement.parentElement;
+parent.style.backgroundColor ="blue"
+
+
+const element5 = document.getElementById("fruits");
+const children =element.children;
+console.log(children)
